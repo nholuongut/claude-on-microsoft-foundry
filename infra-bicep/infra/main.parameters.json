@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": { "value": "${AZURE_ENV_NAME}" },
+    "location":        { "value": "${AZURE_LOCATION}" },
+    "principalId":     { "value": "${AZURE_PRINCIPAL_ID=}" },
+    "assignRbac":      { "value": "${ASSIGN_RBAC=false}" },
+    "baseName":        { "value": "${AZURE_BASE_NAME=claude}" },
+    "haikuModel":      { "value": "${CLAUDE_HAIKU_MODEL=}" },
+    "sonnetModel":     { "value": "${CLAUDE_SONNET_MODEL=}" },
+    "opusModel":       { "value": "${CLAUDE_OPUS_MODEL=}" },
+    "haikuCapacity":   { "value": "${CLAUDE_HAIKU_CAPACITY=25}" },
+    "sonnetCapacity":  { "value": "${CLAUDE_SONNET_CAPACITY=25}" },
+    "opusCapacity":    { "value": "${CLAUDE_OPUS_CAPACITY=25}" },
+    "modelName":       { "value": "${CLAUDE_MODEL_NAME=claude-sonnet-4-6}" },
+    "modelVersion":    { "value": "${CLAUDE_MODEL_VERSION=1}" },
+    "modelCapacity":   { "value": "${CLAUDE_MODEL_CAPACITY=25}" },
+    "claudeOrganizationName": { "value": "${CLAUDE_ORGANIZATION_NAME}" },
+    "claudeCountryCode":      { "value": "${CLAUDE_COUNTRY_CODE=US}" },
+    "claudeIndustry":         { "value": "${CLAUDE_INDUSTRY=technology}" }
+  }
+}
